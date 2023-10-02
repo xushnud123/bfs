@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets'
+import cls from './navbar.module.scss'
+import cx from 'classnames'
+
+import logo from '../../../../public/images/logo.svg'
+---
+
+<div class={cls.wrapper}>
+  <div id='navbar__container' class={cls.container}>
+    <Image
+      src={logo}
+      alt="bo'ston food company"
+      class={cls.logo}
+      width={189}
+      height={71}
+    />
+    <nav class={cls['navbar__nav']}>
+      <ul class={cls['nav-ul']}>
+        <li class={cx(cls['nav-li'])}>About Us</li>
+        <li class={cx(cls['nav-li'])}>Products</li>
+        <li class={cx(cls['nav-li'])}>Contractors</li>
+        <li class={cx(cls['nav-li'])}>News</li>
+        <li class={cx(cls['nav-li'])}>Contacts</li>
+      </ul>
+      <div class={cls['btn-wrapper']}>
+        <button type='button' class={cls.btn}>Get in Touch</button>
+      </div>
+    </nav>
+
+    <button id='nav-btn' class={cls['mobile-btn']}></button>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById('nav-btn')
+  const body = document.querySelector('body')
+  import cls from './navbar.module.scss'
+
+  btn?.addEventListener('click', () => {
+    const nav = document.getElementById('navbar__container')
+    nav?.classList.toggle(cls['navbar__nav--active'])
+    body?.classList.toggle('navbar__active')
+  })
+</script>

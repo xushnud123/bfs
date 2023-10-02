@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Navbar from '../components/global/navbar/Navbar.astro'
+import Hero from '../components/home/Hero.astro'
+import Products from '../components/global/products/Products.tsx'
+---
+
+<Layout title='Welcome to Astro.'>
+  <Navbar />
+  <Hero />
+  <Products client:load />
+</Layout>

@@ -1,0 +1,68 @@
+.wrapper {
+  display: block;
+  .container {
+    height: 885px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 41px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    @media screen and (max-width: 750px) {
+      height: 700px;
+    }
+    .title {
+      color: var(--color-1);
+      text-align: center;
+      font-family: 'Montserrat';
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      max-width: 1050px;
+      margin: 0 auto;
+      width: 100%;
+      @media screen and (max-width: 750px) {
+        font-size: 48px;
+      }
+    }
+    .description {
+      color: var(--color-1);
+      text-align: center;
+      font-family: 'Montserrat';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 35px;
+      max-width: 737px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .btn {
+      display: flex;
+      width: 210px;
+      height: 60px;
+      padding: 10px 40px;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      border-radius: 50px;
+      margin: 0 auto;
+      border: none;
+      background: var(--green-1);
+      cursor: pointer;
+      color: var(--color-1);
+      text-align: center;
+      font-family: 'Poppins';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.3px;
+      transition: background-color 0.3s ease-in;
+      &:hover {
+        background: var(--carrot-1);
+      }
+    }
+  }
+}

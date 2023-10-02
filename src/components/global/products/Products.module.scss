@@ -1,0 +1,157 @@
+.wrapper {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  .title {
+    color: var(--black-1);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 15px 0;
+    @media screen and (max-width: 750px) {
+      font-size: 32px;
+    }
+  }
+  .description {
+    color: var(--gray-5);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .cards {
+    width: 100%;
+    margin-top: 60px;
+    .container {
+      padding: 0 16px;
+      .card {
+        width: 100%;
+        display: flex !important;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 5px;
+        border: 1px solid var(--gray-7);
+        background: var(--color-1);
+        // box-shadow: 0px 60px 80px 0px var(--black-004);
+        padding: 32px 0;
+        gap: 39px;
+        transition: all ease-in 0.25s;
+        .product__image {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          transition: all ease-in 0.25s;
+        }
+        .name {
+          color: var(--black-1);
+          text-align: center;
+          font-family: 'Montserrat';
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .info {
+          color: var(--gray-5);
+          text-align: center;
+          font-family: 'Montserrat';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 36px; /* 225% */
+          padding: 0 20px;
+        }
+        .btn {
+          display: flex;
+          width: 210px;
+          height: 60px;
+          padding: 10px 40px;
+          justify-content: center;
+          align-items: center;
+          gap: 14px;
+          border-radius: 50px;
+          background: var(--green-1);
+          border: none;
+
+          color: var(--color-1);
+          text-align: center;
+          font-family: 'Poppins';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          letter-spacing: 0.3px;
+          line-height: normal;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            background: var(--carrot-1);
+          }
+        }
+        &:hover {
+          .product__image {
+            scale: 1.1;
+          }
+        }
+      }
+      @media screen and (max-width: 900px) {
+        padding: 0 10px;
+      }
+      @media screen and (max-width: 600px) {
+        padding: 0;
+        .card {
+          padding: 24px 0;
+          gap: 20px;
+        }
+      }
+    }
+  }
+  :global(.slick-next) {
+    display: none !important;
+  }
+  :global(.slick-prev) {
+    display: none !important;
+  }
+  :global(.slick-dots) {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    bottom: -60px;
+    li {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid var(--gray-8);
+      button {
+        color: transparent;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  :global(li.slick-active) {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--gray-8);
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    button {
+      width: 16px;
+      height: 16px;
+      background: var(--gray-8);
+      border-radius: 50%;
+    }
+  }
+}
