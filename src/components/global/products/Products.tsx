@@ -4,6 +4,7 @@ import cls from './Products.module.scss'
 import Slider from 'react-slick'
 
 import productImage from '../../../../public/images/products/1.webp'
+import logo from '../../../../public/images/logo_1.svg'
 
 const Products = ({}) => {
   const settings = {
@@ -42,12 +43,7 @@ const Products = ({}) => {
 
   return (
     <div className={cls.wrapper}>
-      {/* <Image
-        src='/images/logo_1.svg'
-        alt="Bo'ston food company"
-        width={48}
-        height={48}
-      /> */}
+      <img src={logo.src} alt="Bo'ston food company" width={48} height={48} />
       <h2 className={cls.title}>Our Products</h2>
       <p className={cls.description}>
         Sunflower oil “Bo'ston Food Company” is a natural oil of the highest

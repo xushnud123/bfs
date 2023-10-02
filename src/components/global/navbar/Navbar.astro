@@ -2,14 +2,12 @@
 import { Image } from 'astro:assets'
 import cls from './navbar.module.scss'
 import cx from 'classnames'
-
-import logo from '../../../../public/images/logo.svg'
 ---
 
 <div class={cls.wrapper}>
   <div id='navbar__container' class={cls.container}>
     <Image
-      src={logo}
+      src='/images/logo.svg'
       alt="bo'ston food company"
       class={cls.logo}
       width={189}

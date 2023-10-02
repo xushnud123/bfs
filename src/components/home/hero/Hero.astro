@@ -1,24 +1,11 @@
 ---
-import {
-  BackgroundImage,
-  ImageSupportDetection
-} from 'astro-imagetools/components'
+import { BackgroundImage } from 'astro-imagetools/components'
 
 import cls from './Hero.module.scss'
 ---
 
 <div class={cls.wrapper}>
-  <BackgroundImage
-    src='/images/hero.webp'
-    preload='webp'
-    alt='bfs'
-    artDirectives={[
-      {
-        src: '/images/hero.webp',
-        media: '(orientation: potrait)'
-      }
-    ]}
-  >
+  <BackgroundImage src='/images/hero.webp'>
     <div class={cls.container}>
       <h1 class={cls.title}>We have been producing oil since 1997</h1>
       <p class={cls.description}>

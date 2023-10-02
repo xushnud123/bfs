@@ -5,10 +5,10 @@ import react from '@astrojs/react'
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), , astroImageTools],
-  vite: {
-    // ssr: {
-    //   noExternal: ['react-slick']
-    // }
-  }
+  integrations: [
+    react({
+      include: ['**/react/*']
+    }),
+    astroImageTools
+  ]
 })
