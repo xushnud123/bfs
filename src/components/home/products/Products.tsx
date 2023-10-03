@@ -5,6 +5,7 @@ import Slider from 'react-slick'
 
 import productImage from '../../../../public/images/products/1.webp'
 import logo from '../../../../public/images/logo_1.svg'
+import TopTitle from '../../global/top-title/top-title'
 
 const Products = ({}) => {
   const settings = {
@@ -43,13 +44,12 @@ const Products = ({}) => {
 
   return (
     <div className={cls.wrapper}>
-      <img src={logo.src} alt="Bo'ston food company" width={48} height={48} />
-      <h2 className={cls.title}>Our Products</h2>
-      <p className={cls.description}>
-        Sunflower oil “Bo'ston Food Company” is a natural oil of the highest
+      <TopTitle
+        title='Our Products'
+        description={`Sunflower oil “Bo'ston Food Company” is a natural oil of the highest
         quality, produced only from environmentally friendly sunflower seeds.
-        "Bo'ston Food Company" – great for frying, dressing and canning!
-      </p>
+        "Bo'ston Food Company" – great for frying, dressing and canning!`}
+      />
       <div className={cls.cards} slot='actions'>
         <Slider {...settings}>
           <div className={cls.container}>

@@ -2,11 +2,15 @@
 import Layout from '../layouts/Layout.astro'
 import Navbar from '../components/global/navbar/Navbar.astro'
 import Hero from '../components/home/hero/Hero.astro'
-import Products from '../components/global/products/Products.tsx'
+import Products from '../components/home/products/Products.tsx'
+import News from '../components/home/news/News.tsx'
+import Testimonials from '../components/home/testimonials/Testimonials.tsx'
 ---
 
 <Layout title='Welcome to Astro.'>
   <Navbar />
   <Hero />
   <Products client:only='react' />
+  <News client:only='react' />
+  <Testimonials client:only='react' />
 </Layout>

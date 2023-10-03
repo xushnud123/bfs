@@ -60,6 +60,7 @@
       line-height: normal;
       letter-spacing: 0.3px;
       transition: background-color 0.3s ease-in;
+      cursor: pointer;
       &:hover {
         background: var(--carrot-1);
       }

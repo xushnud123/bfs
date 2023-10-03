@@ -13,7 +13,7 @@
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-    gap: 110px;
+    gap: 90px;
     padding: 20px 0;
     .logo {
       position: relative;
@@ -28,7 +28,7 @@
       .nav-ul {
         display: flex;
         align-items: center;
-        gap: 40px;
+        gap: 8px;
         .nav-li {
           list-style: none;
           color: var(--gray-8);
@@ -39,6 +39,15 @@
           line-height: normal;
           letter-spacing: 0.2px;
           cursor: pointer;
+          transition: all ease-in 0.25s;
+          border-radius: 100px;
+          padding: 13px 25px;
+          background: transparent;
+          border-radius: 50px;
+          &:hover {
+            background: var(--gray-1);
+            color: var(--green-1);
+          }
         }
       }
       .btn-wrapper {
@@ -54,7 +63,7 @@
           border-radius: 50px;
           background: var(--green-1);
           box-shadow: 0px 20px 60px 0px var(--green-2);
-          padding: 15px 40px;
+          padding: 15px 24px;
           border: none;
           cursor: pointer;
           transition-delay: 0;
@@ -111,7 +120,7 @@
     @media screen and (max-width: 1050px) {
       justify-content: space-between;
       .navbar__nav {
-        background: var(--gray-1);
+        background: var(--color-1);
         position: absolute;
         top: 100%;
         left: 0;
@@ -130,10 +139,13 @@
           .nav-li {
             font-size: 24px;
             line-height: 28px;
-            transition: all 0.2s ease-in-out;
             transform: translateX(-100px);
-            transition-delay: 0.4s;
             opacity: 0;
+            transition:
+              transform 0.4s ease-in-out 0.4s,
+              background-color 0.2s ease-in 0s,
+              color 0.2s ease-in 0s,
+              opacity 0.4s ease-in-out 0.4s;
           }
         }
         .btn-wrapper {
@@ -170,19 +182,39 @@
           transform: translateX(0px);
           opacity: 1;
           &:nth-child(1) {
-            transition-delay: 0.5s;
+            transition:
+              transform 0.4s ease-in-out 0.5s,
+              background-color 0.2s ease-in 0s,
+              color 0.2s ease-in 0s,
+              opacity 0.4s ease-in-out 0.4s;
           }
           &:nth-child(2) {
-            transition-delay: 0.6s;
+            transition:
+              transform 0.4s ease-in-out 0.6s,
+              background-color 0.2s ease-in 0s,
+              color 0.2s ease-in 0s,
+              opacity 0.4s ease-in-out 0.4s;
           }
           &:nth-child(3) {
-            transition-delay: 0.7s;
+            transition:
+              transform 0.4s ease-in-out 0.7s,
+              background-color 0.2s ease-in 0s,
+              color 0.2s ease-in 0s,
+              opacity 0.4s ease-in-out 0.4s;
           }
           &:nth-child(4) {
-            transition-delay: 0.8s;
+            transition:
+              transform 0.4s ease-in-out 0.8s,
+              background-color 0.2s ease-in 0s,
+              color 0.2s ease-in 0s,
+              opacity 0.4s ease-in-out 0.4s;
           }
           &:nth-child(5) {
-            transition-delay: 0.9s;
+            transition:
+              transform 0.4s ease-in-out 0.9s,
+              background-color 0.2s ease-in 0s,
+              color 0.2s ease-in 0s,
+              opacity 0.4s ease-in-out 0.4s;
           }
         }
       }
