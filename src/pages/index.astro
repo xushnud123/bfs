@@ -5,6 +5,8 @@ import Hero from '../components/home/hero/Hero.astro'
 import Products from '../components/home/products/Products.tsx'
 import News from '../components/home/news/News.tsx'
 import Testimonials from '../components/home/testimonials/Testimonials.tsx'
+import Footer from '../components/global/footer/Footer.astro'
+import Partners from '../components/home/partners/Partners'
 ---
 
 <Layout title='Welcome to Astro.'>
@@ -13,4 +15,6 @@ import Testimonials from '../components/home/testimonials/Testimonials.tsx'
   <Products client:only='react' />
   <News client:only='react' />
   <Testimonials client:only='react' />
+  <Partners client:only='react' />
+  <Footer />
 </Layout>

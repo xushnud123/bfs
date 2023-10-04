@@ -1,0 +1,167 @@
+---
+import { Image } from 'astro:assets'
+import cls from './Footer.module.scss'
+---
+
+<div class={cls.wrapper}>
+  <div class={cls.container}>
+    <div class={cls.social}>
+      <div>
+        <Image
+          src='/images/Logo_white.svg'
+          alt="Bo'ston food company"
+          width={190}
+          height={71}
+        />
+        <p class={cls.description}>
+          There are many variations of passages of lorem ipsum available, but
+          the majority suffered.
+        </p>
+      </div>
+      <div class={cls['social-row']}>
+        <h6 class={cls['social-row-title']}>Social media links:</h6>
+        <ul>
+          <li>
+            <a href='#' target='_blank' rel='“noreferrer”'>
+              <Image
+                src='/images/icons/facebook.svg'
+                alt="Bo'ston food company"
+                width={24}
+                height={24}
+              />
+            </a>
+          </li>
+          <li>
+            <a href='#' target='_blank' rel='“noreferrer”'>
+              <Image
+                src='/images/icons/telegram.svg'
+                alt="Bo'ston food company"
+                width={24}
+                height={24}
+              /></a
+            >
+          </li>
+          <li>
+            <a href='#' target='_blank' rel='“noreferrer”'>
+              <Image
+                src='/images/icons/twitter.svg'
+                alt="Bo'ston food company"
+                width={24}
+                height={24}
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class={cls.links}>
+      <h5 class={cls.title}>Links</h5>
+      <ul>
+        <li>
+          <a class={cls['nav-a']} href='#' target='_blank' rel='“noreferrer”'
+            >About Us</a
+          >
+        </li>
+
+        <li>
+          <a class={cls['nav-a']} href='#' target='_blank' rel='“noreferrer”'
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class={cls['nav-a']} href='#' target='_blank' rel='“noreferrer”'
+            >News</a
+          >
+        </li>
+        <li>
+          <a class={cls['nav-a']} href='#' target='_blank' rel='“noreferrer”'
+            >Partners</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class={cls.news}>
+      <h5 class={cls.title}>News</h5>
+      <div>
+        <div class={cls['news-container']}>
+          <Image
+            src='/images/Rectangle 14.svg'
+            alt='bfs'
+            width={67}
+            height={67}
+            class={cls['news-img']}
+          />
+          <div class={cls['news-container-row']}>
+            <h6 class={cls['news-container-row-title']}>
+              Lorem ipsum dolor sit amet consectetur
+            </h6>
+            <p class={cls['news-container-row-date']}>19 Sep, 2023</p>
+          </div>
+        </div>
+        <div class={cls['news-container']}>
+          <Image
+            src='/images/Rectangle 14.svg'
+            alt='bfs'
+            width={67}
+            height={67}
+            class={cls['news-img']}
+          />
+          <div class={cls['news-container-row']}>
+            <h6 class={cls['news-container-row-title']}>
+              Lorem ipsum dolor sit amet consectetur
+            </h6>
+            <p class={cls['news-container-row-date']}>19 Sep, 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class={cls.contact}>
+      <h5 class={cls.title}>Contact</h5>
+      <ul class={cls['contact-ul']}>
+        <li class={cls['contact-li']}>
+          <a href='tek:+998991234567' target='_blank' rel='“noreferrer”'>
+            <Image
+              src='/images/icons/Phone Calling.svg'
+              alt='bfs'
+              width={24}
+              height={24}
+              class={cls['news-img']}
+            />
+            <span>+998 71 123 45 67</span>
+          </a>
+        </li>
+        <li class={cls['contact-li']}>
+          <a
+            href='mailto:someone@example.com'
+            target='_blank'
+            rel='“noreferrer”'
+          >
+            <Image
+              src='/images/icons/Letter.svg'
+              alt='bfs'
+              width={24}
+              height={24}
+              class={cls['news-img']}
+            />
+            <span>info@bfc.uz</span>
+          </a>
+        </li>
+        <li class={cls['contact-li']}>
+          <a href='#' target='_blank' rel='“noreferrer”'>
+            <Image
+              src='/public/images/icons/Map Point.svg'
+              alt='bfs'
+              width={24}
+              height={24}
+              class={cls['news-img']}
+            />
+            <span>Tashkent, Amir Temur st. 14</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class={cls['bottom-container']}>
+    <p>Copyright &copy; 2023 BFC. All right recerved</p>
+  </div>
+</div>

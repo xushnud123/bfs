@@ -3,8 +3,8 @@ import React from 'react'
 import cls from './Testimonials.module.scss'
 import Slider from 'react-slick'
 
-import productImage from '../../../../public/images/products/1.webp'
 import TopTitle from '../../global/top-title/top-title'
+import Quote from '../../icons/quote'
 
 const Testimonials = ({}) => {
   const settings = {
@@ -44,15 +44,16 @@ const Testimonials = ({}) => {
   return (
     <div className={cls.wrapper}>
       <TopTitle
-        title='Our Products'
+        title='Testimonials'
         description={`Sunflower oil “Bo'ston Food Company” is a natural oil of the highest
         quality, produced only from environmentally friendly sunflower seeds.
         "Bo'ston Food Company" – great for frying, dressing and canning!`}
       />
       <div className={cls.cards} slot='actions'>
         <Slider {...settings}>
-          <div className={cls.container}>
-            <div className={cls.card}>
+          <figure className={cls.container}>
+            <blockquote className={cls.card}>
+              <Quote />
               <h3 className={cls.description}>
                 Sunflower oil “Bo'ston Food Company” is a natural oil of the
                 highest quality, produced only from environmentally friendly
@@ -63,36 +64,25 @@ const Testimonials = ({}) => {
                 <h4 className={cls.name}>Xurshid Istamov</h4>
                 <p className={cls.info}>UI/UX Designer</p>
               </div>
-            </div>
-          </div>
-          <div className={cls.container}>
-            <div className={cls.card}>
+            </blockquote>
+          </figure>
+          <figure className={cls.container}>
+            <blockquote className={cls.card}>
+              <Quote />
               <h3 className={cls.description}>
                 Sunflower oil “Bo'ston Food Company” is a natural oil of the
                 highest quality, produced only from environmentally friendly
+                sunflower seeds.
               </h3>
               <div className={cls.row}>
                 <h4 className={cls.name}>Xurshid Istamov</h4>
                 <p className={cls.info}>UI/UX Designer</p>
               </div>
-            </div>
-          </div>
-          <div className={cls.container}>
-            <div className={cls.card}>
-              <h3 className={cls.description}>
-                Sunflower oil “Bo'ston Food Company” is a natural oil of the
-                highest quality, produced only from environmentally friendly
-                sunflower seeds. "Bo'ston Food Company" – great for frying,
-                dressing and canning!
-              </h3>
-              <div className={cls.row}>
-                <h4 className={cls.name}>Xurshid Istamov</h4>
-                <p className={cls.info}>UI/UX Designer</p>
-              </div>
-            </div>
-          </div>
-          <div className={cls.container}>
-            <div className={cls.card}>
+            </blockquote>
+          </figure>
+          <figure className={cls.container}>
+            <blockquote className={cls.card}>
+              <Quote />
               <h3 className={cls.description}>
                 Sunflower oil “Bo'ston Food Company” is a natural oil of the
                 highest quality, produced only from environmentally friendly
@@ -103,10 +93,11 @@ const Testimonials = ({}) => {
                 <h4 className={cls.name}>Xurshid Istamov</h4>
                 <p className={cls.info}>UI/UX Designer</p>
               </div>
-            </div>
-          </div>
-          <div className={cls.container}>
-            <div className={cls.card}>
+            </blockquote>
+          </figure>
+          <figure className={cls.container}>
+            <blockquote className={cls.card}>
+              <Quote />
               <h3 className={cls.description}>
                 Sunflower oil “Bo'ston Food Company” is a natural oil of the
                 highest quality, produced only from environmentally friendly
@@ -117,8 +108,23 @@ const Testimonials = ({}) => {
                 <h4 className={cls.name}>Xurshid Istamov</h4>
                 <p className={cls.info}>UI/UX Designer</p>
               </div>
-            </div>
-          </div>
+            </blockquote>
+          </figure>
+          <figure className={cls.container}>
+            <blockquote className={cls.card}>
+              <Quote />
+              <h3 className={cls.description}>
+                Sunflower oil “Bo'ston Food Company” is a natural oil of the
+                highest quality, produced only from environmentally friendly
+                sunflower seeds. "Bo'ston Food Company" – great for frying,
+                dressing and canning!
+              </h3>
+              <div className={cls.row}>
+                <h4 className={cls.name}>Xurshid Istamov</h4>
+                <p className={cls.info}>UI/UX Designer</p>
+              </div>
+            </blockquote>
+          </figure>
         </Slider>
       </div>
     </div>

@@ -46,6 +46,15 @@
         background: var(--color-1);
         gap: 28px;
         transition: all ease-in 0.25s;
+        svg {
+          color: var(--gray-3);
+          transition: all ease-in 0.3s;
+        }
+        h2 {
+          font-family: 'Net Akkurat';
+          font-weight: 400;
+          font-size: 48px;
+        }
         .description {
           color: var(--gray-5);
           font-family: 'Montserrat';
@@ -72,6 +81,11 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+          }
+        }
+        &:hover {
+          svg {
+            color: var(--carrot-1);
           }
         }
       }
