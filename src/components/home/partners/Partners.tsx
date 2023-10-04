@@ -5,12 +5,12 @@ import Slider from 'react-slick'
 
 import TopTitle from '../../global/top-title/top-title'
 
-import img_1 from '../../../../public/images/testimonials/1.webp'
-import img_2 from '../../../../public/images/testimonials/2.webp'
-import img_3 from '../../../../public/images/testimonials/3.webp'
-import img_4 from '../../../../public/images/testimonials/4.webp'
-import img_5 from '../../../../public/images/testimonials/5.webp'
-import img_6 from '../../../../public/images/testimonials/6.webp'
+import img_1 from '../../../../public/images/testimonials/1.png'
+import img_2 from '../../../../public/images/testimonials/2.png'
+import img_3 from '../../../../public/images/testimonials/3.png'
+import img_4 from '../../../../public/images/testimonials/4.png'
+import img_5 from '../../../../public/images/testimonials/5.png'
+import img_6 from '../../../../public/images/testimonials/6.png'
 
 const Partners = ({}) => {
   const settings = {
