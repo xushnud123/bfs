@@ -9,28 +9,6 @@
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  .title {
-    color: var(--black-1);
-    text-align: center;
-    font-family: 'Montserrat';
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 15px 0;
-    @media screen and (max-width: 750px) {
-      font-size: 32px;
-    }
-  }
-  .description {
-    color: var(--gray-5);
-    text-align: center;
-    font-family: 'Montserrat';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 36px;
-  }
   .cards {
     width: 100%;
     margin-top: 60px;
@@ -139,54 +117,6 @@
           gap: 20px;
         }
       }
-    }
-  }
-  :global(.slick-next) {
-    display: none !important;
-  }
-  :global(.slick-prev) {
-    display: none !important;
-  }
-  :global(.slick-dots) {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    bottom: -90px;
-    li {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      border: 2px solid var(--gray-8);
-      button {
-        color: transparent;
-
-        &::before {
-          display: none;
-        }
-      }
-    }
-  }
-  :global(li.slick-active) {
-    width: 32px;
-    height: 32px;
-    border: 1px solid var(--gray-8);
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    button {
-      width: 16px;
-      height: 16px;
-      background: var(--gray-8);
-      border-radius: 50%;
-    }
-  }
-  :global(.slick-track) {
-    display: flex !important;
-  }
-  :global(.slick-slide) {
-    height: inherit !important;
-    & > div {
-      height: 100% !important;
     }
   }
 }
