@@ -62,10 +62,10 @@ const News = ({}) => {
               </div>
               <div className={cls.body}>
                 <div className={cls['body-title']}>
-                  <h4 className={cls.name}>
+                  <h6 className={cls.name}>
                     Lorem ipsum dolor sit amet consectetur. Ut id diam gravida
                     varius.
-                  </h4>
+                  </h6>
                   <p className={cls.info}>
                     Sunflower oil “Bo'ston Food Company” is a.
                   </p>
@@ -85,9 +85,9 @@ const News = ({}) => {
               </div>
               <div className={cls.body}>
                 <div className={cls['body-title']}>
-                  <h4 className={cls.name}>
+                  <h6 className={cls.name}>
                     Lorem ipsum dolor sit amet consectetur
-                  </h4>
+                  </h6>
                   <p className={cls.info}>
                     Sunflower oil “Bo'ston Food Company” is a.
                   </p>
@@ -107,10 +107,10 @@ const News = ({}) => {
               </div>
               <div className={cls.body}>
                 <div className={cls['body-title']}>
-                  <h4 className={cls.name}>
+                  <h6 className={cls.name}>
                     Lorem ipsum dolor sit amet consectetur. Ut id diam gravida
                     varius.
-                  </h4>
+                  </h6>
                   <p className={cls.info}>
                     Sunflower oil “Bo'ston Food Company” is a.
                   </p>
@@ -130,9 +130,9 @@ const News = ({}) => {
               </div>
               <div className={cls.body}>
                 <div className={cls['body-title']}>
-                  <h4 className={cls.name}>
+                  <h6 className={cls.name}>
                     Lorem ipsum dolor sit amet consectetur
-                  </h4>
+                  </h6>
                   <p className={cls.info}>
                     Sunflower oil “Bo'ston Food Company” is a.
                   </p>
@@ -152,9 +152,9 @@ const News = ({}) => {
               </div>
               <div className={cls.body}>
                 <div className={cls['body-title']}>
-                  <h4 className={cls.name}>
+                  <h6 className={cls.name}>
                     Lorem ipsum dolor sit amet consectetur
-                  </h4>
+                  </h6>
                   <p className={cls.info}>
                     Sunflower oil “Bo'ston Food Company” is a.
                   </p>

@@ -61,7 +61,7 @@ const Testimonials = ({}) => {
                 dressing and canning!
               </h3>
               <div className={cls.row}>
-                <h4 className={cls.name}>Xurshid Istamov</h4>
+                <h5 className={cls.name}>Xurshid Istamov</h5>
                 <p className={cls.info}>UI/UX Designer</p>
               </div>
             </blockquote>
@@ -75,7 +75,7 @@ const Testimonials = ({}) => {
                 sunflower seeds.
               </h3>
               <div className={cls.row}>
-                <h4 className={cls.name}>Xurshid Istamov</h4>
+                <h5 className={cls.name}>Xurshid Istamov</h5>
                 <p className={cls.info}>UI/UX Designer</p>
               </div>
             </blockquote>
@@ -90,7 +90,7 @@ const Testimonials = ({}) => {
                 dressing and canning!
               </h3>
               <div className={cls.row}>
-                <h4 className={cls.name}>Xurshid Istamov</h4>
+                <h5 className={cls.name}>Xurshid Istamov</h5>
                 <p className={cls.info}>UI/UX Designer</p>
               </div>
             </blockquote>
@@ -105,7 +105,7 @@ const Testimonials = ({}) => {
                 dressing and canning!
               </h3>
               <div className={cls.row}>
-                <h4 className={cls.name}>Xurshid Istamov</h4>
+                <h5 className={cls.name}>Xurshid Istamov</h5>
                 <p className={cls.info}>UI/UX Designer</p>
               </div>
             </blockquote>
@@ -120,7 +120,7 @@ const Testimonials = ({}) => {
                 dressing and canning!
               </h3>
               <div className={cls.row}>
-                <h4 className={cls.name}>Xurshid Istamov</h4>
+                <h5 className={cls.name}>Xurshid Istamov</h5>
                 <p className={cls.info}>UI/UX Designer</p>
               </div>
             </blockquote>
