@@ -58,6 +58,8 @@ const Products = ({}) => {
                 src={productImage.src}
                 alt="Sunflower oil “Bo'ston Food Company” is a."
                 className={cls['product__image']}
+                width={300}
+                height={320}
               />
               <>
                 <h4 className={cls.name}>Product Name</h4>
@@ -74,6 +76,8 @@ const Products = ({}) => {
                 src={productImage.src}
                 alt="Sunflower oil “Bo'ston Food Company” is a."
                 className={cls['product__image']}
+                width={300}
+                height={320}
               />
               <>
                 <h4 className={cls.name}>Product Name</h4>
@@ -90,6 +94,8 @@ const Products = ({}) => {
                 src={productImage.src}
                 alt="Sunflower oil “Bo'ston Food Company” is a."
                 className={cls['product__image']}
+                width={300}
+                height={320}
               />
               <>
                 <h4 className={cls.name}>Product Name</h4>
@@ -106,6 +112,8 @@ const Products = ({}) => {
                 src={productImage.src}
                 alt="Sunflower oil “Bo'ston Food Company” is a."
                 className={cls['product__image']}
+                width={300}
+                height={320}
               />
               <>
                 <h4 className={cls.name}>Product Name</h4>
@@ -122,6 +130,8 @@ const Products = ({}) => {
                 src={productImage.src}
                 alt="Sunflower oil “Bo'ston Food Company” is a."
                 className={cls['product__image']}
+                width={300}
+                height={320}
               />
               <>
                 <h4 className={cls.name}>Product Name</h4>

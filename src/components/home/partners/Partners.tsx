@@ -62,32 +62,68 @@ const Partners = ({}) => {
         <Slider {...settings}>
           <div className={cls.container}>
             <div className={cls.card}>
-              <img src={img_1.src} alt='bfs' />
+              <img
+                src={img_1.src}
+                alt='bfs'
+                width={200}
+                height={47}
+                style={{ objectFit: 'contain' }}
+              />
             </div>
           </div>
           <div className={cls.container}>
             <div className={cls.card}>
-              <img src={img_2.src} alt='bfs' />
+              <img
+                src={img_2.src}
+                alt='bfs'
+                width={200}
+                height={47}
+                style={{ objectFit: 'contain' }}
+              />
             </div>
           </div>
           <div className={cls.container}>
             <div className={cls.card}>
-              <img src={img_3.src} alt='bfs' />
+              <img
+                src={img_3.src}
+                alt='bfs'
+                width={200}
+                height={47}
+                style={{ objectFit: 'contain' }}
+              />
             </div>
           </div>
           <div className={cls.container}>
             <div className={cls.card}>
-              <img src={img_4.src} alt='bfs' />
+              <img
+                src={img_4.src}
+                alt='bfs'
+                width={200}
+                height={47}
+                style={{ objectFit: 'contain' }}
+              />
             </div>
           </div>
           <div className={cls.container}>
             <div className={cls.card}>
-              <img src={img_5.src} alt='bfs' />
+              <img
+                src={img_5.src}
+                alt='bfs'
+                width={200}
+                height={47}
+                style={{ objectFit: 'contain' }}
+              />
             </div>
           </div>
           <div className={cls.container}>
             <div className={cls.card}>
-              <img src={img_6.src} alt='bfs' />
+              <img
+                src={img_6.src}
+                alt='bfs'
+                width={200}
+                height={47}
+                style={{ objectFit: 'contain' }}
+              />
             </div>
           </div>
         </Slider>
