@@ -52,7 +52,12 @@ const Partners = ({}) => {
   }
 
   return (
-    <div className={cls.wrapper}>
+    <div
+      className={cls.wrapper}
+      data-aos='fade-left'
+      data-aos-offset='300'
+      data-aos-easing='ease-in-sine'
+    >
       <TopTitle
         title='Our Partners'
         description={`Sunflower oil “Bo'ston Food Company” is a natural oil of the highest

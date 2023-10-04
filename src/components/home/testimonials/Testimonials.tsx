@@ -46,7 +46,12 @@ const Testimonials = ({}) => {
   }
 
   return (
-    <div className={cls.wrapper}>
+    <div
+      className={cls.wrapper}
+      data-aos='fade-right'
+      data-aos-offset='300'
+      data-aos-easing='ease-in-sine'
+    >
       <TopTitle
         title='Testimonials'
         description={`Sunflower oil “Bo'ston Food Company” is a natural oil of the highest

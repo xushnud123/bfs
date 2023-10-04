@@ -17,35 +17,18 @@ import cls from './main.module.scss'
   <div class={cls.wrapper}>
     <Navbar />
     <Hero />
-    <div class={cls.prod}>
-      <!-- <Image
-        src='/images/bg/3.png'
-        alt='bfs'
-        width={593}
-        height={361}
-        class={cls['prod-one']}
-      /> -->
-      <Products client:only='react' />
-      <!-- <Image
-        src='/images/bg/1.png'
-        alt='bfs'
-        width={382}
-        height={304}
-        class={cls['prod-two']}
-      /> -->
-    </div>
-    <div class={cls.new}>
-      <News client:only='react' />
-      <!-- <Image
-        src='/images/bg/2.png'
-        alt='bfs'
-        width={322}
-        height={866}
-        class={cls['prod-three']}
-      /> -->
-    </div>
+    <Products client:only='react' />
+    <News client:only='react' />
     <Testimonials client:only='react' />
     <Partners client:only='react' />
     <Footer />
   </div>
 </Layout>
+
+<script>
+  import AOS from 'aos'
+
+  AOS.init({
+    startEvent: 'load'
+  })
+</script>
