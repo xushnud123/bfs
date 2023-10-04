@@ -164,4 +164,20 @@ import cls from './Footer.module.scss'
   <div class={cls['bottom-container']}>
     <p>Copyright &copy; 2023 BFC. All right recerved</p>
   </div>
+  <button id='btn' class={cls.up}>
+    <Image
+      src='/public/images/icons/arrow-up.svg'
+      alt='bfs up'
+      width={24}
+      height={24}
+    />
+  </button>
 </div>
+
+<script>
+  const btn = document.getElementById('btn')
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  })
+</script>

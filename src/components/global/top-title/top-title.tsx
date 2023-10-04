@@ -14,7 +14,9 @@ const TopTitle: FC<TopTitleProps> = ({ title, description }) => {
     <div className={cls.wrapper}>
       <img src={logo.src} alt="Bo'ston food company" width={48} height={48} />
       <h2 className={cls.title}>{title}</h2>
-      <h3 className={cls.description}>{description}</h3>
+      <h3 className={cls.description}>
+        <span>{description}</span>
+      </h3>
     </div>
   )
 }

@@ -2,6 +2,8 @@
   margin-top: 120px;
   background: #0d1017;
   padding: 54px 0 10px 0;
+  position: relative;
+
   .container {
     max-width: 1200px;
     width: 100%;
@@ -229,6 +231,35 @@
     padding: 11px 0;
     @media screen and (max-width: 560px) {
       text-align: center;
+    }
+  }
+  .up {
+    position: absolute;
+    z-index: 10;
+    right: calc(50vw - 600px);
+    top: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 52px;
+    height: 52px;
+    box-sizing: border-box;
+    background: var(--green-1);
+    @media screen and (max-width: 1220px) {
+      right: 10px;
+    }
+    @media screen and (max-width: 560px) {
+      top: 10px;
+      width: 40px;
+      height: 40px;
+    }
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
+    &:hover {
+      background: var(--carrot-1);
     }
   }
   @media screen and (max-width: 1220px) {

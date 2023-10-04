@@ -1,0 +1,37 @@
+.wrapper {
+  display: block;
+  width: 100vw;
+  overflow-x: hidden;
+  .prod {
+    position: relative;
+    .prod-one {
+      position: absolute;
+      object-fit: contain;
+      right: -120px;
+      top: -250px;
+      @media screen and (max-width: 750px) {
+        width: 350px !important;
+        height: auto !important;
+        object-fit: cover;
+        right: -50px;
+      }
+    }
+    .prod-two {
+      position: absolute;
+      object-fit: contain;
+      left: -50px;
+      bottom: -300px;
+      @media screen and (max-width: 750px) {
+        bottom: -240px;
+      }
+    }
+  }
+  .new {
+    position: relative;
+    .prod-three {
+      position: absolute;
+      right: 0;
+      bottom: -80%;
+    }
+  }
+}
