@@ -38,7 +38,8 @@ const News = ({}) => {
           slidesToScroll: 1
         }
       }
-    ]
+    ],
+    arrows: false
   }
 
   return (
@@ -62,10 +63,10 @@ const News = ({}) => {
               </div>
               <div className={cls.body}>
                 <div className={cls['body-title']}>
-                  <h6 className={cls.name}>
+                  <h4 className={cls.name}>
                     Lorem ipsum dolor sit amet consectetur. Ut id diam gravida
                     varius.
-                  </h6>
+                  </h4>
                   <p className={cls.info}>
                     Sunflower oil “Bo'ston Food Company” is a.
                   </p>
@@ -85,9 +86,9 @@ const News = ({}) => {
               </div>
               <div className={cls.body}>
                 <div className={cls['body-title']}>
-                  <h6 className={cls.name}>
+                  <h4 className={cls.name}>
                     Lorem ipsum dolor sit amet consectetur
-                  </h6>
+                  </h4>
                   <p className={cls.info}>
                     Sunflower oil “Bo'ston Food Company” is a.
                   </p>
@@ -107,10 +108,10 @@ const News = ({}) => {
               </div>
               <div className={cls.body}>
                 <div className={cls['body-title']}>
-                  <h6 className={cls.name}>
+                  <h4 className={cls.name}>
                     Lorem ipsum dolor sit amet consectetur. Ut id diam gravida
                     varius.
-                  </h6>
+                  </h4>
                   <p className={cls.info}>
                     Sunflower oil “Bo'ston Food Company” is a.
                   </p>
@@ -130,9 +131,9 @@ const News = ({}) => {
               </div>
               <div className={cls.body}>
                 <div className={cls['body-title']}>
-                  <h6 className={cls.name}>
+                  <h4 className={cls.name}>
                     Lorem ipsum dolor sit amet consectetur
-                  </h6>
+                  </h4>
                   <p className={cls.info}>
                     Sunflower oil “Bo'ston Food Company” is a.
                   </p>
@@ -152,9 +153,9 @@ const News = ({}) => {
               </div>
               <div className={cls.body}>
                 <div className={cls['body-title']}>
-                  <h6 className={cls.name}>
+                  <h4 className={cls.name}>
                     Lorem ipsum dolor sit amet consectetur
-                  </h6>
+                  </h4>
                   <p className={cls.info}>
                     Sunflower oil “Bo'ston Food Company” is a.
                   </p>

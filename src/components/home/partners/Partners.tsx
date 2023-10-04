@@ -47,7 +47,8 @@ const Partners = ({}) => {
           slidesToScroll: 1
         }
       }
-    ]
+    ],
+    arrows: false
   }
 
   return (

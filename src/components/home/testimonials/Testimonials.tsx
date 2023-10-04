@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import cls from './Testimonials.module.scss'
 import Slider from 'react-slick'
@@ -7,6 +7,7 @@ import TopTitle from '../../global/top-title/top-title'
 import Quote from '../../icons/quote'
 
 const Testimonials = ({}) => {
+  const [activeSlide, setActiveSlide] = useState(0)
   const settings = {
     dots: true,
     infinite: true,
@@ -38,7 +39,10 @@ const Testimonials = ({}) => {
           slidesToScroll: 1
         }
       }
-    ]
+    ],
+    arrows: false,
+    beforeChange: (_: any, next: React.SetStateAction<number>) =>
+      setActiveSlide(next)
   }
 
   return (
@@ -51,7 +55,10 @@ const Testimonials = ({}) => {
       />
       <div className={cls.cards} slot='actions'>
         <Slider {...settings}>
-          <figure className={cls.container}>
+          <figure
+            className={cls.container}
+            aria-hidden={activeSlide !== 1 ? true : false}
+          >
             <blockquote className={cls.card}>
               <Quote />
               <h3 className={cls.description}>
@@ -66,7 +73,10 @@ const Testimonials = ({}) => {
               </div>
             </blockquote>
           </figure>
-          <figure className={cls.container}>
+          <figure
+            aria-hidden={activeSlide !== 2 ? true : false}
+            className={cls.container}
+          >
             <blockquote className={cls.card}>
               <Quote />
               <h3 className={cls.description}>
@@ -80,7 +90,10 @@ const Testimonials = ({}) => {
               </div>
             </blockquote>
           </figure>
-          <figure className={cls.container}>
+          <figure
+            aria-hidden={activeSlide !== 3 ? true : false}
+            className={cls.container}
+          >
             <blockquote className={cls.card}>
               <Quote />
               <h3 className={cls.description}>
@@ -95,7 +108,10 @@ const Testimonials = ({}) => {
               </div>
             </blockquote>
           </figure>
-          <figure className={cls.container}>
+          <figure
+            aria-hidden={activeSlide !== 4 ? true : false}
+            className={cls.container}
+          >
             <blockquote className={cls.card}>
               <Quote />
               <h3 className={cls.description}>
@@ -110,7 +126,10 @@ const Testimonials = ({}) => {
               </div>
             </blockquote>
           </figure>
-          <figure className={cls.container}>
+          <figure
+            aria-hidden={activeSlide !== 5 ? true : false}
+            className={cls.container}
+          >
             <blockquote className={cls.card}>
               <Quote />
               <h3 className={cls.description}>
