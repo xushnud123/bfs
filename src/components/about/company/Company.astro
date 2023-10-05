@@ -1,0 +1,130 @@
+---
+import { Image } from 'astro:assets'
+import { BackgroundImage } from 'astro-imagetools/components'
+
+import cls from './company.module.scss'
+---
+
+<div class={cls.wrapper}>
+  <div class={cls.container}>
+    <div class={cls.left}>
+      <h2 class={cls.tite}>2019</h2>
+      <h3 class={cls.title}>Founding a company</h3>
+      <div class={cls.blogs}>
+        <div class={cls.blog}>
+          <Image
+            src='/images/logo_1.svg'
+            alt="Bo'ston food Company"
+            width={24}
+            height={24}
+          />
+          <p>
+            Foundation of the company. Key activities: import of vegetable oils.
+          </p>
+        </div>
+        <div class={cls.blog}>
+          <Image
+            src='/images/logo_1.svg'
+            alt="Bo'ston food Company"
+            width={24}
+            height={24}
+          />
+          <p>
+            Foundation of the company. Key activities: import of vegetable oils.
+          </p>
+        </div>
+        <div class={cls.blog}>
+          <Image
+            src='/images/logo_1.svg'
+            alt="Bo'ston food Company"
+            width={24}
+            height={24}
+          />
+          <p>
+            Foundation of the company. Key activities: import of vegetable oils.
+          </p>
+        </div>
+        <div class={cls.blog}>
+          <Image
+            src='/images/logo_1.svg'
+            alt="Bo'ston food Company"
+            width={24}
+            height={24}
+          />
+          <p>
+            Foundation of the company. Key activities: import of vegetable oils.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class={cls.right}>
+      <Image
+        src='/images/Image.webp'
+        alt='bfs company images'
+        width={600}
+        height={375}
+        class={cls.comp}
+      />
+    </div>
+  </div>
+  <div class={cls['second-container']}>
+    <BackgroundImage
+      src='/images/Map.png'
+      alt='bfc about'
+      preload='webp'
+      backgroundSize='100% 100%'
+      format={['webp']}
+      class={cls.container}
+    >
+      <div class={cls.row}>
+        <div class={cls['row-container']}>
+          <h4 class={cls.info}>
+            We are present in 7 countries around the world
+          </h4>
+          <p class={cls.description}>
+            For all the time of cooperation, we have earned a reputation as a
+            reliable supplier, which is distinguished by:
+          </p>
+          <div class={cls.blogs}>
+            <div class={cls.blog}>
+              <Image
+                src='/images/logo_1.svg'
+                alt="Bo'ston food Company"
+                width={24}
+                height={24}
+              />
+              <p>
+                Foundation of the company. Key activities: import of vegetable
+                oils.
+              </p>
+            </div>
+            <div class={cls.blog}>
+              <Image
+                src='/images/logo_1.svg'
+                alt="Bo'ston food Company"
+                width={24}
+                height={24}
+              />
+              <p>
+                Foundation of the company. Key activities: import of vegetable
+                oils.
+              </p>
+            </div>
+            <div class={cls.blog}>
+              <Image
+                src='/images/logo_1.svg'
+                alt="Bo'ston food Company"
+                width={24}
+                height={24}
+              />
+              <p>
+                Foundation of the company. Key activities: import of vegetable
+                oils.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </BackgroundImage>
+  </div>
+</div>

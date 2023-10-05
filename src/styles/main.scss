@@ -21,10 +21,11 @@
   overflow: hidden;
 }
 
+html,
 body {
   overflow-x: hidden;
   width: 100vw;
-  max-width: 100%;
+  max-width: 100vw;
   height: auto;
   background: var(--gray-9);
 }

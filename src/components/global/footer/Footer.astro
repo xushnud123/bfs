@@ -175,7 +175,7 @@ import cls from './Footer.module.scss'
 </div>
 
 <script>
-  const btn = document.getElementById('btn')
+  const btn = document.getElementById('btn') as HTMLButtonElement
 
   btn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })

@@ -1,4 +1,5 @@
 import React from 'react'
+import cx from 'classnames'
 
 import cls from './Partners.module.scss'
 import Slider from 'react-slick'
@@ -12,7 +13,7 @@ import img_4 from '../../../../public/images/testimonials/4.png'
 import img_5 from '../../../../public/images/testimonials/5.png'
 import img_6 from '../../../../public/images/testimonials/6.png'
 
-const Partners = ({}) => {
+const Partners = ({ style }: { style?: boolean }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -53,7 +54,7 @@ const Partners = ({}) => {
 
   return (
     <div
-      className={cls.wrapper}
+      className={cx(cls.wrapper, style && cls.act)}
       data-aos='fade-left'
       data-aos-offset='300'
       data-aos-easing='ease-in-sine'

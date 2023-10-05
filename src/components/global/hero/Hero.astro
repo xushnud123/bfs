@@ -1,0 +1,25 @@
+---
+import { BackgroundImage } from 'astro-imagetools/components'
+
+import cls from './hero.module.scss'
+
+const { title, description } = Astro.props
+---
+
+<div class={cls.wrapper}>
+  <BackgroundImage
+    src='/images/hero/about-hero.webp'
+    alt='bfc about'
+    preload='webp'
+    backgroundSize='cover'
+    format={['webp']}
+    class={cls.container}
+  >
+    <div class={cls.container}>
+      <h1 class={cls.title}>{title}</h1>
+      <p class={cls.description}>
+        {description}
+      </p>
+    </div>
+  </BackgroundImage>
+</div>

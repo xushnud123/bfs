@@ -1,0 +1,35 @@
+.wrapper {
+  width: 100%;
+  .container {
+    min-height: 262px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    .title {
+      color: var(--color-1);
+      font-family: 'Montserrat Variable';
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .description {
+      color: var(--color-1);
+      font-family: 'Montserrat Variable';
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    @media screen and (max-width: 1220px) {
+      padding: 0 10px;
+    }
+  }
+}

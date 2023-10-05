@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/global/hero/Hero.astro'
+import Product from '../components/products/product/product.tsx'
+---
+
+<Layout title='Welcome to BFS About'>
+  <div>
+    <Hero
+      title='Products'
+      description='Lorem ipsum dolor sit amet consectetur. Donec lectus sem vulputate eu imperdiet orci ipsum est.'
+    />
+    <Product client:only='react' />
+  </div>
+</Layout>

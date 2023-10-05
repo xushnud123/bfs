@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Partners from '../components/global/partners/Partners.tsx'
+import Hero from '../components/global/hero/Hero.astro'
+import Company from '../components/about/company/Company.astro'
+---
+
+<Layout title='Welcome to BFS About'>
+  <div>
+    <Hero
+      title='About Us'
+      description='Lorem ipsum dolor sit amet consectetur. Donec lectus sem vulputate eu imperdiet orci ipsum est.'
+    />
+    <Company />
+    <Partners style client:only='react' />
+  </div>
+</Layout>

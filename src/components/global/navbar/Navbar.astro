@@ -2,24 +2,38 @@
 import { Image } from 'astro:assets'
 import cls from './navbar.module.scss'
 import cx from 'classnames'
+
+const { pathname } = Astro.url
+
+const navUrl = [
+  { id: 1, url: '/about', name: 'About Us' },
+  { id: 2, url: '/products', name: 'Products' },
+  { id: 3, url: '/contractors', name: 'Contractors' },
+  { id: 4, url: '/news', name: 'News' },
+  { id: 5, url: '/contacts', name: 'Contacts' }
+]
 ---
 
 <div class={cls.wrapper}>
   <div id='navbar__container' class={cls.container}>
-    <Image
-      src='/images/logo.svg'
-      alt="bo'ston food company"
-      class={cls.logo}
-      width={189}
-      height={71}
-    />
+    <a href='/'>
+      <Image
+        src='/images/logo.svg'
+        alt="bo'ston food company"
+        class={cls.logo}
+        width={189}
+        height={71}
+      />
+    </a>
     <nav class={cls['navbar__nav']}>
       <ul class={cls['nav-ul']}>
-        <li class={cx(cls['nav-li'])}>About Us</li>
-        <li class={cx(cls['nav-li'])}>Products</li>
-        <li class={cx(cls['nav-li'])}>Contractors</li>
-        <li class={cx(cls['nav-li'])}>News</li>
-        <li class={cx(cls['nav-li'])}>Contacts</li>
+        {
+          navUrl.map((item) => (
+            <li class={cx(cls['nav-li'], pathname === item.url && cls.active)}>
+              <a href={item.url}>{item.name}</a>
+            </li>
+          ))
+        }
       </ul>
       <div class={cls['btn-wrapper']}>
         <button type='button' class={cls.btn}>Get in Touch</button>

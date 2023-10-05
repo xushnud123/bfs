@@ -1,0 +1,141 @@
+.wrapper {
+  width: 100%;
+  margin-top: 56px;
+  .wrap-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    @media screen and (max-width: 1220px) {
+      padding: 0 10px;
+    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    .container {
+      display: grid;
+
+      .card {
+        width: 100%;
+        display: flex !important;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 5px;
+        border: 1px solid var(--gray-7);
+        background: var(--color-1);
+        padding: 20px 0;
+        gap: 20px;
+        transition: all ease-in 0.25s;
+        .product__image {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          transition: all ease-in 0.25s;
+        }
+        .name {
+          color: var(--black-1);
+          text-align: center;
+          font-family: 'Montserrat Variable';
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .info {
+          color: var(--gray-5);
+          text-align: center;
+          font-family: 'Montserrat Variable';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 36px; /* 225% */
+          padding: 0 20px;
+        }
+        .btn {
+          display: flex;
+          width: 210px;
+          height: 60px;
+          padding: 10px 40px;
+          justify-content: center;
+          align-items: center;
+          gap: 14px;
+          border-radius: 50px;
+          background: var(--green-1);
+          border: none;
+
+          color: var(--color-1);
+          text-align: center;
+          font-family: 'Poppins';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          letter-spacing: 0.3px;
+          line-height: normal;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            background: var(--carrot-1);
+          }
+        }
+        &:hover {
+          .product__image {
+            scale: 1.1;
+          }
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .card {
+          padding: 24px 0;
+          gap: 20px;
+        }
+      }
+    }
+  }
+  .paginate {
+    max-width: 1200px;
+    margin: 74px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      li {
+        list-style: none;
+        a {
+          width: 40px;
+          height: 40px;
+          border-radius: 5px;
+          border: 1px solid var(--gray-3);
+          background: var(--color-1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all ease-in 0.3s;
+          color: var(--gray-99);
+          font-family: 'Inter';
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 100%; /* 14px */
+          &:hover {
+            color: var(--color-1);
+            background: rgba(100, 142, 0, 0.6);
+          }
+          &.act {
+            color: var(--color-1);
+            background: #648e00;
+          }
+        }
+        &:first-child {
+          img {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}
