@@ -566,6 +566,16 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.50.0.tgz#9e93b850f0f3fa35f5fa59adfd03adae8488e484"
   integrity sha512-NCC3zz2+nvYd+Ckfh87rA47zfu2QsQpvc6k1yzTk+b9KzRj0wkGa8LSoGOXN6Zv4lRf/EIoZ80biDh9HOI+RNQ==
 
+"@fontsource-variable/montserrat@^5.0.13":
+  version "5.0.13"
+  resolved "https://registry.npmjs.org/@fontsource-variable/montserrat/-/montserrat-5.0.13.tgz#207acbc675aaec5d8fe5fa035c092729ed9cea95"
+  integrity sha512-6ab2//+nIeehGpsLym75BAN0CKNp0pjgCTbUg5fWf98BGyiq9Jj8rMDu2aMJ93lbkhcUxpVm9jHvnfQlpdhAiQ==
+
+"@fontsource/poppins@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.npmjs.org/@fontsource/poppins/-/poppins-5.0.8.tgz#a1c5540aedb3719a36eba5c7c5dfaa3aed3c9f80"
+  integrity sha512-P8owfYWluoUY5Nyzk4gT/L6LmLmseP6ezFWhj6VBUa5pRIdnCvNJpoQ6i/vhekjtJOfqX6nKlB+LCttoUl2GQQ==
+
 "@gar/promisify@^1.0.1", "@gar/promisify@^1.1.3":
   version "1.1.3"
   resolved "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
