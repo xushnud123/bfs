@@ -136,6 +136,12 @@
           }
         }
       }
+      .custom-paginate {
+        a {
+          color: var(--color-1);
+          background: #648e00;
+        }
+      }
     }
   }
 }
